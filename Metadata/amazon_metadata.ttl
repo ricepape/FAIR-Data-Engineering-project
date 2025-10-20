@@ -1,0 +1,46 @@
+@prefix amazon: <http://example.org/amazon#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+amazon:dataset a amazon:Dataset ;
+    amazon:columns 7 ;
+    amazon:duplicateRows 309 ;
+    amazon:hasColumn amazon:brand,
+        amazon:category,
+        amazon:image_url,
+        amazon:price,
+        amazon:product_id,
+        amazon:product_url,
+        amazon:rating ;
+    amazon:memoryUsageMB "3.09"^^xsd:float ;
+    amazon:rows 7561 ;
+    ns1:title "Amazon Product Dataset" .
+
+amazon:brand a amazon:Column ;
+    amazon:dataType "string" ;
+    ns1:title "brand" .
+
+amazon:category a amazon:Column ;
+    amazon:dataType "string" ;
+    ns1:title "category" .
+
+amazon:image_url a amazon:Column ;
+    amazon:dataType "string" ;
+    ns1:title "image_url" .
+
+amazon:price a amazon:Column ;
+    amazon:dataType "float" ;
+    ns1:title "price" .
+
+amazon:product_id a amazon:Column ;
+    amazon:dataType "string" ;
+    ns1:title "product_id" .
+
+amazon:product_url a amazon:Column ;
+    amazon:dataType "string" ;
+    ns1:title "product_url" .
+
+amazon:rating a amazon:Column ;
+    amazon:dataType "float" ;
+    ns1:title "rating" .
+

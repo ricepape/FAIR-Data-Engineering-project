@@ -1,0 +1,21 @@
+@prefix amazon: <http://example.org/amazon#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+amazon:price a amazon:Distribution ;
+    amazon:max "3187.0"^^xsd:float ;
+    amazon:mean "197.8889"^^xsd:float ;
+    amazon:median "127.1"^^xsd:float ;
+    amazon:min "7.84"^^xsd:float ;
+    amazon:q1 "63.14"^^xsd:float ;
+    amazon:q3 "238.88"^^xsd:float ;
+    amazon:std "243.9987"^^xsd:float .
+
+amazon:rating a amazon:Distribution ;
+    amazon:max "5.0"^^xsd:float ;
+    amazon:mean "4.2872"^^xsd:float ;
+    amazon:median "4.4"^^xsd:float ;
+    amazon:min "1.0"^^xsd:float ;
+    amazon:q1 "4.1"^^xsd:float ;
+    amazon:q3 "4.6"^^xsd:float ;
+    amazon:std "0.4951"^^xsd:float .
+
