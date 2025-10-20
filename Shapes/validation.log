@@ -1,0 +1,5 @@
+INFO:root:True
+INFO:root:[a rdfg:Graph;rdflib:storage [a rdflib:Store;rdfs:label 'Memory']].
+DEBUG:root:Validation Report
+Conforms: True
+

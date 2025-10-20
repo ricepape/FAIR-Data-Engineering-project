@@ -1,0 +1,50 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/ns#> .
+
+ex:ProductShape
+    a sh:NodeShape ;
+    sh:targetClass ex:Product ;
+    sh:property [
+        sh:path ex:product_id ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:maxLength 20 ;
+        sh:name "Product ID" ;
+    ] ;
+    sh:property [
+        sh:path ex:brand ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:maxLength 50 ;
+        sh:name "Brand" ;
+    ] ;
+    sh:property [
+        sh:path ex:price ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.0 ;
+        sh:name "Price" ;
+    ] ;
+    sh:property [
+        sh:path ex:category ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:name "Category" ;
+    ] ;
+    sh:property [
+        sh:path ex:rating ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.0 ;
+        sh:maxInclusive 5.0 ;
+        sh:name "Rating" ;
+    ] ;
+    sh:property [
+        sh:path ex:image_url ;
+        sh:datatype xsd:anyURI ;
+        sh:name "Image URL" ;
+    ] ;
+    sh:property [
+        sh:path ex:product_url ;
+        sh:datatype xsd:anyURI ;
+        sh:name "Product URL" ;
+    ] .
