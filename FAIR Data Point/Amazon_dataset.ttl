@@ -1,0 +1,58 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcite: <http://purl.org/spar/datacite/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix language: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sio: <http://semanticscience.org/resource/>.
+@prefix wd: <https://www.wikidata.org/wiki/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix d: <http://localhost:8080/dataset/>.
+@prefix c27: <http://localhost:8080/dataset/c27be3ce-882a-4bf7-9630-4971f133ca70#>.
+@prefix pro: <http://localhost:8080/profile/>.
+@prefix c: <http://localhost:8080/catalog/>.
+@prefix met: <http://localhost:8080/dataset/c27be3ce-882a-4bf7-9630-4971f133ca70/metrics/>.
+@prefix poo: <https://www.kaggle.com/datasets/poorveshchaudhari/>.
+@prefix d0: <http://publications.europa.eu/resource/authority/data-theme/>.
+@prefix fdp: <https://w3id.org/fdp/fdp-o#>.
+@prefix dis: <http://localhost:8080/distribution/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+
+d:c27be3ce-882a-4bf7-9630-4971f133ca70
+    a dcat:Dataset, dcat:Resource;
+    dct:accessRights c27:accessRights;
+    dct:conformsTo pro:2f08228e-1789-40f8-84cd-28e3288c3604;
+    dct:description "Dataset for fashion";
+    dct:isPartOf c:b07bfd8c-cc0a-463e-8944-ae9708fc211e;
+    dct:language language:en;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0>;
+    dct:publisher [ a foaf:Agent; foaf:name "Mohamed Yousuff" ];
+    dct:title "Amazon_dataset";
+    sio:SIO_000628
+    met:445c0a70d1e214e545b261559e2842f4, met:5d27e854a9e78eb3f663331cd47cdc13;
+    rdfs:label "Amazon_dataset";
+    dcat:keyword "E-commerce", "amazon", "fashion";
+    dcat:landingPage poo:amazon-fashion-products;
+    dcat:theme d0:ECON;
+    dcat:version "1.0";
+    fdp:metadataIdentifier c27:identifier;
+    fdp:metadataIssued "2025-11-05T16:54:14.009358825Z"^^xsd:dateTime;
+    fdp:metadataModified "2025-11-05T16:54:14.009358825Z"^^xsd:dateTime.
+met:445c0a70d1e214e545b261559e2842f4
+    sio:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt>;
+    sio:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt>.
+met:5d27e854a9e78eb3f663331cd47cdc13
+sio:SIO_000332 wd:Q8777; sio:SIO_000628 wd:Q8777.
+c27:accessRights
+    a dct:RightsStatement;
+    dct:description "This resource has no access restriction".
+c27:identifier
+    a dcite:Identifier;
+    dct:identifier
+    "http://localhost:8080/dataset/c27be3ce-882a-4bf7-9630-4971f133ca70".
+dis:
+    a ldp:DirectContainer;
+    dct:title "Distributions";
+    ldp:hasMemberRelation dcat:distribution;
+    ldp:membershipResource d:c27be3ce-882a-4bf7-9630-4971f133ca70.
+pro:2f08228e-1789-40f8-84cd-28e3288c3604 rdfs:label "Dataset Profile".

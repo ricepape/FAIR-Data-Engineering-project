@@ -1,0 +1,51 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dcite: <http://purl.org/spar/datacite/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix language: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sio: <http://semanticscience.org/resource/>.
+@prefix wd: <https://www.wikidata.org/wiki/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dis: <http://localhost:8080/distribution/>.
+@prefix b31e9: <http://localhost:8080/distribution/b31e9a06-3d47-401e-bfe7-cf05ee95085e#>.
+@prefix pro: <http://localhost:8080/profile/>.
+@prefix d: <http://localhost:8080/dataset/>.
+@prefix met: <http://localhost:8080/distribution/b31e9a06-3d47-401e-bfe7-cf05ee95085e/metrics/>.
+@prefix k: <https://www.kaggle.com/datasets/karkavelrajaj/>.
+@prefix fdp: <https://w3id.org/fdp/fdp-o#>.
+
+dis:b31e9a06-3d47-401e-bfe7-cf05ee95085e
+    a dcat:Distribution, dcat:Resource;
+    dct:accessRights b31e9:accessRights;
+    dct:conformsTo pro:02c649de-c579-43bb-b470-306abdc808c7;
+    dct:isPartOf d:c27be3ce-882a-4bf7-9630-4971f133ca70;
+    dct:language language:en;
+    dct:license <https://www.apache.org/licenses/LICENSE-2.0>;
+    dct:publisher [ a foaf:Agent; foaf:name " Poorvesh" ];
+    dct:title "Amazon_Original_Distribution";
+    sio:SIO_000628
+    met:445c0a70d1e214e545b261559e2842f4, met:5d27e854a9e78eb3f663331cd47cdc13;
+    rdfs:label "Amazon_Original_Distribution";
+    dcat:accessURL k:amazon-sales-dataset;
+    dcat:byteSize "25480396";
+    dcat:format "CSV";
+    dcat:mediaType "Excel";
+    dcat:version "1.0";
+    fdp:metadataIdentifier b31e9:identifier;
+    fdp:metadataIssued "2025-11-05T16:56:46.792810201Z"^^xsd:dateTime;
+    fdp:metadataModified "2025-11-05T17:02:28.88093294Z"^^xsd:dateTime.
+met:445c0a70d1e214e545b261559e2842f4
+    sio:SIO_000332 <https://www.ietf.org/rfc/rfc3986.txt>;
+    sio:SIO_000628 <https://www.ietf.org/rfc/rfc3986.txt>.
+met:5d27e854a9e78eb3f663331cd47cdc13
+sio:SIO_000332 wd:Q8777; sio:SIO_000628 wd:Q8777.
+b31e9:accessRights
+    a dct:RightsStatement;
+    dct:description "This resource has no access restriction".
+b31e9:identifier
+    a dcite:Identifier;
+    dct:identifier
+    "http://localhost:8080/distribution/b31e9a06-3d47-401e-bfe7-cf05ee95085e".
+pro:02c649de-c579-43bb-b470-306abdc808c7 rdfs:label "Distribution Profile".
+
